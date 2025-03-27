@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@1" rel="stylesheet" />
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e configurar o seu ambiente.</p>
+                <form action="login.php" method="post" autocomplete="off">
+                    <p>
+                        <label for="imail"><span class="material-symbols-outlined">
+                            account_circle
+                            </span></label>
+                        <input type="text" name="mail" id="imail" required>
+                    </p>
+                    <p>
+                        <label for="isenha"><span class="material-symbols-outlined">
+                            key
+                            </span></label>
+                        <input type="password" name="senha" id="isenha" required>
+                    </p>
+                    <p class="buttons">
+                        <input type="submit" value="Entrar">
+                    </p>
+                    <p class="buttons">
+                        <input type="submit" id="iesqueci" value=""> 
+                        <label for="iesqueci">
+                            Esqueci a senha <span class="material-symbols-outlined">
+                            mail
+                            </span>
+                        </label>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
